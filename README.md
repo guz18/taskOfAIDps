@@ -8,7 +8,9 @@ All of these models and their steps to training are explained in the files named
 * trainingModel[number].ipynb number is [1,2,3,4]
 
 1- The first task was ' visualise historically the number of accidents per category (column1). '
-Here is my graph taken from the drawingGraph.ipynb file 
+Here is my graph taken from the [drawingGraph.ipynb] file 
 
-images/screenshot.png
+[images/screenshot.png]
 
+
+2- 
