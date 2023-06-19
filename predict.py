@@ -11,8 +11,8 @@ for month in range(1, 13):
     data_per_month[month] = pd.read_csv(f'data_per_month_values/data_month_{month}.csv') 
 
 def load_model_and_scaler(month):
-    model = load_model(f'models\model4\model_{month}.h5')  # Loading the models
-    scaler = joblib.load(f'models\model4\scaler_{month}.pkl')  # Loading the scalers
+    model = load_model(f'models/model4/model_{month}.h5')  # Loading the models
+    scaler = joblib.load(f'models/model4/scaler_{month}.pkl')  # Loading the scalers
     
     return model, scaler  # Returning the model and the scaler
 
