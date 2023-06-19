@@ -29,8 +29,7 @@ Here is my graph taken from the [drawingGraph.ipynb](drawingGraph.ipynb) file
 ![comparingOfMyModels](images/comparingOfMyModels.png)
 
 
-#I chose my last model to use
-#I used Flask, Heroku and because my github repository was large for me to deploy it directly to Heroku, I used Docker.
+#I chose my last model to use. I used Flask, Heroku and because my github repository was large for me to deploy it directly to Heroku, I used Docker.
 
 * My website is https://dps-ai-task-goksu-7343c3186a4c.herokuapp.com/
 * If you send request in this format to this website 
