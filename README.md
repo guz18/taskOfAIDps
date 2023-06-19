@@ -41,7 +41,7 @@ Here is my graph taken from the [drawingGraph.ipynb](drawingGraph.ipynb) file
 * It will return this kind of information below:
 * Prediction: 20.145708084106445 
 
-<b> Thank you for looking to my Project! </b>
+<b> Thank you! Hope you liked my project </b>
 
 
 
