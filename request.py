@@ -1,19 +1,19 @@
 import requests
-import json
 
-url = "http://localhost:5000/"  # Setting the URL for the API
-data = {"year": 2021, "month": 1}  # Setting the data to send to the API
+url = "https://dps-ai-task-goksu-7343c3186a4c.herokuapp.com/"
 
-data_json = json.dumps(data)  # Converting the data to JSON format
+data = {
+    "year": 2021,
+    "month": 1
+}
 
-headers = {'Content-Type': 'application/json'}  # Setting the headers for the request
-response = requests.post(url, data=data_json, headers=headers)  # Making a POST request to the API
+response = requests.post(url, json=data)
 
-# Converting the response from byte format to string format
-response_str = response.content.decode("utf-8")
-
-# Converting the string to a JSON object
-response_json = json.loads(response_str)
-
-# Printing the JSON object
-print(response_json)
+if response.status_code == 200:
+    try:
+        prediction = response.json()["prediction"]
+        print("Prediction:", prediction)
+    except ValueError:
+        print("Invalid JSON response")
+else:
+    print("Request failed with status code:", response.status_code)
